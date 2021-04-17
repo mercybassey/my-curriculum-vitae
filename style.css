@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 30px;
+    overflow-x: hidden;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+li{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+    color: #274472;
+}
+
+i{
+    color: #274472;
+}
+
+.italics{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.header{
+    color: #274472;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+.profile-name{
+    padding-bottom: 10px;
+}
+
+.profile-links, p{
+    font-weight: bold;
+}
+
+.profile-links,p, i{
+    margin: 5px;
+}
+
+.profile-image img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.profile-bio{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.profile-language p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.profile-language ul{
+    display: flex;
+    justify-content: space-around;
+}
+.profile-language ul li{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.skills-header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.profile-skills div p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    text-align: justify;
+    padding-left: 101px;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.education-details{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+.education{
+    padding-top: 25px;
+}
+.education p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.education-detail-one div{
+    padding: 6px;
+}
+
+.profile-hobbies{
+    padding-top: 20px;
+}
+.profile-hobbies .hobbies p{
+    text-align: center;
+    font-size: 1.2rem
+}
+
+.profile-hobbies ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-hobbies ul li{
+    padding: 25px;
+}
+
+.profile-organizations {
+    padding-bottom: 20px;
+}
+
+.profile-organizations .organizations p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.profile-organizations .organizations{
+    padding-top: 20px;
+}
+
+.organization-details{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+.organization-details p{
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+   html, body{
+        padding: 10px;
+        margin: 0;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .profile-image img{
+        display: none;
+    }
+
+    .profile-bio{
+        text-align: justify;
+    }
+
+    .header{
+        font-size: 0.5rem;
+        
+    }
+
+    .skills{
+        display: grid;
+        grid-template-columns: 7fr 4fr;
+        text-align: justify;
+        padding-left: 10px;
+    }
+
+    .skills li{
+        font-size: 12px;
+    }
+
+    .education-details p{
+        font-size: 15px;
+    }
+
+    .education-year div{
+       padding-bottom: 20px;
+    }
+
+    .profile{
+        display: grid;
+        grid-template-columns: 9fr ;
+    }
+
+    .profile-hobbies ul{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .profile-hobbies ul li{
+        padding: 10px;
+        display: flex; 
+    }
+}
+
+/* animation delay */
+.animate__animated.animate__fadeInLeft{
+    --animate-duration: 3s;
+}
+
+.animate__animated.animate__fadeInUp{
+    --animate-duration: 3s;
+}
